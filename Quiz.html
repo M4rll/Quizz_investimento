@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- O resto do HTML permanece igual -->
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h2>Quiz Interativo</h2>
+            <p>Teste seus conhecimentos!</p>
+        </div>
+        
+        <div class="quiz-body">
+            <div id="question-container" class="question-container">
+                <div class="question-number">Pergunta <span id="question-number">1</span> de <span id="total-questions">5</span></div>
+                <div class="question-text" id="question-text">Qual é a capital do Brasil?</div>
+                <div class="options-container" id="options-container">
+                    <!-- As opções serão inseridas aqui via JavaScript -->
+                </div>
+            </div>
+            
+            <div class="navigation">
+                <button id="prev-btn" disabled>Anterior</button>
+                <button id="next-btn">Próxima</button>
+            </div>
+            
+            <div class="progress-bar">
+                <div class="progress" id="progress-bar"></div>
+            </div>
+        </div>
+        
+        <div id="results-container" class="results-container hidden">
+            <h2>Quiz Concluído!</h2>
+            <p>Sua pontuação:</p>
+            <div class="score" id="score">0/5</div>
+            <p id="result-message">Parabéns pelo seu desempenho!</p>
+            <button class="restart-btn" id="restart-btn">Fazer Quiz Novamente</button>
+        </div>
+    </div>
+
+    <script>
+        // O JavaScript permanece igual
+        const quizData = [
+            {
+                question: "Qual é a capital do Brasil?",
+                options: ["Rio de Janeiro", "Brasília", "São Paulo", "Salvador"],
+                correct: 1
+            },
+            // ... resto do código JavaScript
+        ];
+
+        // ... resto do código JavaScript
+    </script>
+</body>
+</html>
